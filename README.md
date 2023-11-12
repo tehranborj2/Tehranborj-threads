@@ -119,7 +119,7 @@ About Threads.io
 [Threads.io](https://threads.io/) provide a service meant for sending "Automated Behavior-Driven Emails" based on user activity and workflow rules setted by the account administrator.
 You can consult the original API [here](https://docs.threads.io/). Feel free to make any pull requests if you notice any API upgrades.
 
-About Wabel
+About Tehranborj
 ----------------
 [Tehranborj](http://www.tehran-borj.ir) is one of the reputable online platforms in the real estate transactions sector in the 22nd district of Tehran. This platform provides comprehensive information, including prices, sales conditions, and guidance on selecting the best construction projects in Chitgar, Tehran.
 
