@@ -1,8 +1,8 @@
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Wabel/threads-io-php-plug/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Wabel/threads-io-php-plug/?branch=1.0)
-[![Build Status](https://travis-ci.org/Wabel/threads-io-php-plug.svg?branch=master)](https://travis-ci.org/Wabel/threads-io-php-plug)
-[![Coverage Status](https://coveralls.io/repos/Wabel/threads-io-php-plug/badge.svg?branch=master&service=github)](https://coveralls.io/github/Wabel/threads-io-php-plug?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Tehranborj-threads/threads-io-php-plug/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Tehranborj-threads/threads-io-php-plug/?branch=1.0)
+[![Build Status](https://travis-ci.org/Tehranborj-threads/threads-io-php-plug.svg?branch=master)](https://travis-ci.org/Tehranborj-threads/threads-io-php-plug)
+[![Coverage Status](https://coveralls.io/repos/Tehranborj-threads/threads-io-php-plug/badge.svg?branch=master&service=github)](https://coveralls.io/github/Tehranborj-threads/threads-io-php-plug?branch=master)
 
-Wabel's Threads.io PHP plug
+Tehranborj-threads's Threads.io PHP plug
 ===========================
 
 What is this?
@@ -13,11 +13,11 @@ This project is a PHP connector to [Threads.io](http://threads.io). Use this plu
 Initialize
 ----------
 
-Here is a basic example on how you can use Wabel's Threads.io PHP Plug :
+Here is a basic example on how you can use Tehranborj-threads's Threads.io PHP Plug :
 
 ```php
-use \Wabel\ThreadsIo\ThreadsIoClient;
-use \Wabel\ThreadsIo\ThreadsIoService;
+use \Tehranborj-threads\ThreadsIo\ThreadsIoClient;
+use \Tehranborj-threads\ThreadsIo\ThreadsIoService;
 
 // The ThreadsIoClient class is the low level class used to make the API calls.
 // It takes your eventKey in parameter, which is provided to you by Threads.io
@@ -37,12 +37,12 @@ Interfaces and Entites
 ----------------------
 
 As explained earlier, the **ThreadsIoService** is manipulating entities. A User entity, Event entity or Page entity is the instantiation of an existing class of your PHP application implementing respectively the **UserThreadableInterface**, **EventThreadableInterface**, **PageThreadableInterface**. For instance, a Member class that is used for manipulating users in your application is a good candidate for implementing the **UserThreadable** interface.
-If you have no classes that could implement the ThreadableInterfaces, you can instantiate manually one of the Wabel\Entities (User, Event or Page) provided in this package.
+If you have no classes that could implement the ThreadableInterfaces, you can instantiate manually one of the Tehranborj-threads\Entities (User, Event or Page) provided in this package.
 
 ```php
-use \Wabel\ThreadsIo\Entities\User;
-use \Wabel\ThreadsIo\Entities\Event;
-use \Wabel\ThreadsIo\Entities\Page;
+use \Tehranborj-threads\ThreadsIo\Entities\User;
+use \Tehranborj-threads\ThreadsIo\Entities\Event;
+use \Tehranborj-threads\ThreadsIo\Entities\Page;
 
 // Whether you retrieve an object implementing the UserThreadableInterface from your DB...
 $yourUser = $dao->getMemberById(2103);
@@ -69,13 +69,13 @@ Here's a basic usage of the service :
 
 
 ```php
-use \Wabel\ThreadsIo\Entities\User;
-use \Wabel\ThreadsIo\Entities\Event;
-use \Wabel\ThreadsIo\Entities\Page;
-use \Wabel\ThreadsIo\ThreadsIoClient;
-use \Wabel\ThreadsIo\ThreadsIoService;
+use \Tehranborj-threads\ThreadsIo\Entities\User;
+use \Tehranborj-threads\ThreadsIo\Entities\Event;
+use \Tehranborj-threads\ThreadsIo\Entities\Page;
+use \Tehranborj-threads\ThreadsIo\ThreadsIoClient;
+use \Tehranborj-threads\ThreadsIo\ThreadsIoService;
 
-// Instantiate an object that implements one of the Wabel\ThreadsIo\Interfaces
+// Instantiate an object that implements one of the Tehranborj-threads\ThreadsIo\Interfaces
 // (one of the provided classes in this case)
 $user = new User("4815162342", [
      "name" => "Hugo Reyes",
